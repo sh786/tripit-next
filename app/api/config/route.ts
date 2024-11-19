@@ -4,5 +4,7 @@ export async function GET() {
     description: 'An AI-based travel planner to help you explore and plan your next great trip.'
   };
 
-  return Response.json({ data })
+  return new Response(JSON.stringify({ data: exampleConfig }), {
+    headers: { 'Content-Type': 'application/json' }
+  });
 }
