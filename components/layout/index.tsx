@@ -47,7 +47,10 @@ export default function Layout({
             ></Image>
             <p>Precedent</p>
           </Link>
-          <div>
+          <div className="flex items-center space-x-4">
+            <Link href="/explore-map" className="text-sm text-gray-700 hover:underline">
+              Explore Map
+            </Link>
             <AnimatePresence>
               {!session && status !== "loading" ? (
                 <motion.button
